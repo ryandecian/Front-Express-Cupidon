@@ -1,4 +1,3 @@
-@import "./assets/Fonts/Quicksand/stylesheet.css";
 
 :root {
     /*Couleur des textes*/
@@ -56,7 +55,6 @@
 }
 
 body {
-    font-family: "Quicksand", sans-serif;
     padding: 0;
     margin: 0;
 }
