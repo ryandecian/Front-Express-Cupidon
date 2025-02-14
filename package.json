@@ -1,8 +1,20 @@
 {
   "name": "cupidon-express",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "homepage": "https://github.com/ryandecian/Front-Express-Cupidon#readme",
+  "bugs": {
+    "url": "https://github.com/ryandecian/Front-Express-Cupidon/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryandecian/Front-Express-Cupidon.git"
+  },
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -16,7 +28,7 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
-    "react-router-dom": "^7.1.3"
+    "react-router-dom": "^7.1.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
@@ -29,6 +41,6 @@
     "globals": "^15.14.0",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5"
+    "vite": "^6.1.0"
   }
 }
