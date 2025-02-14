@@ -1,0 +1,207 @@
+/* 🌸 Style global */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #ffe6e9, #ffb6c1);
+    min-height: 100vh;
+}
+
+/* 💌 Titre principal */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c2185b;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔐 Conteneur d'authentification */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* 📝 Formulaires d'inscription & connexion */
+.auth-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.auth-box h2 {
+    text-align: center;
+    color: #c2185b;
+}
+
+.auth-box input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    border: 2px solid #c2185b;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.auth-button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #a3154f;
+}
+
+/* 🔄 Lien pour alterner entre connexion et inscription */
+.auth-box p {
+    text-align: center;
+    color: #c2185b;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.auth-box p:hover {
+    color: #a3154f;
+}
+
+/* 📝 Zone d'ajout de message */
+.message-box {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.message-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #c2185b;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+}
+
+.send-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #c2185b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.send-button:hover {
+    background-color: #a3154f;
+}
+
+/* 📜 Liste des messages */
+.messages-list {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* 🏷️ Carte de message */
+.message-card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.message-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.message-text {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.message-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* 📅 Date */
+.message-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ❤️ Bouton de like */
+.like-button {
+    font-size: 1rem;
+    color: #c2185b;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.like-button:hover {
+    color: #a3154f;
+}
+
+.like-button.disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+/* 🔽 Bouton Voir plus */
+.load-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.load-more:hover {
+    background-color: #d81b60;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    .message-box,
+    .messages-list,
+    .auth-container {
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+}
